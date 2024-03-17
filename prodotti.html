@@ -110,13 +110,14 @@
                             class="rounded-circle me-2" />
                         <strong>Mario Rossi</strong>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                    <ul class="dropdown-menu border border-secondary mt-2 p-2 rounded-3 shadow w-100"
+                        data-bs-theme="dark">
+                        <li><a class="dropdown-item rounded-2 " href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item rounded-2" href="#">Profilo</a></li>
                         <li>
-                            <hr class="dropdown-divider" />
+                            <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                        <li><a class="dropdown-item rounded-2" href="#">Esci</a></li>
                     </ul>
                 </div>
             </div>
@@ -154,15 +155,18 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- PRODACT 1 -->
                             <tr>
                                 <td colspan="2">
-                                    <div class="d-flex">
-                                        <div class="">
-                                            <img class=" w-25 h-10 " src="https://picsum.photos/200" alt="">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
                                         </div>
-                                        <div>
-                                            <h5>Smartpone Samsung Galaxy S21</h5>
-                                            <span class="text-secondary d-none d-xl-block">Display AMOLED, Fotocamera
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
                                                 Ultra
                                                 Wide. Batteria a
                                                 lunga durata</span>
@@ -195,13 +199,302 @@
                             <!-- PRODUCT 2 -->
                             <tr>
                                 <td colspan="2">
-                                    <div class="d-flex">
-                                        <div class="align-middle">
-                                            <img class=" w-25 h-10 " src="https://picsum.photos/200" alt="">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
                                         </div>
-                                        <div class="align-middle">
-                                            <h5>Smartpone Samsung Galaxy S21</h5>
-                                            <span class="text-secondary d-none d-xl-block">Display AMOLED, Fotocamera
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <!-- CHECK -->
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <span class="border border-danger px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-xmark text-danger"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODACT CHECK -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <!-- CHECK -->
+                                    <span class="border border-success px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODACT CHECK -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <!-- CHECK -->
+                                    <span class="border border-success px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODACT CHECK -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <!-- CHECK -->
+                                    <span class="border border-success px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODACT CHECK -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <!-- CHECK -->
+                                    <span class="border border-success px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODUCT 2 -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <!-- CHECK -->
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <span class="border border-danger px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-xmark text-danger"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODUCT 2 -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
+                                                Ultra
+                                                Wide. Batteria a
+                                                lunga durata</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    <span class="text-secondary">799.00€</span>
+                                </td>
+                                <!-- CHECK -->
+                                <td class="align-middle d-none d-md-table-cell">
+                                    <span class="border border-danger px-2 py-1 rounded-circle">
+                                        <i class="fa-solid fa-xmark text-danger"></i>
+                                    </span>
+                                </td>
+                                </td>
+                                <td class="align-middle">
+                                    <div class="d-flex">
+                                        <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- PRODUCT 2 -->
+                            <tr>
+                                <td colspan="2">
+                                    <div class="d-flex align-middle">
+                                        <div class="me-2 align-self-center">
+                                            <img class="" alt="" width="50" height="50" src="https://picsum.photos/200"
+                                                alt="">
+                                        </div>
+                                        <div class="align-self-start">
+                                            <h6 class="">Smartpone Samsung Galaxy S21</h6>
+                                            <span class="text-secondary d-none d-xl-block p-0 fw-light">Display AMOLED,
+                                                Fotocamera
                                                 Ultra
                                                 Wide. Batteria a
                                                 lunga durata</span>
@@ -234,31 +527,6 @@
 
                         </tbody>
                     </table>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nisi assumenda totam dicta
-                        voluptatibus repudiandae sit ipsum. Voluptatem reicienLorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Similique nisi assumenda totam dicta voluptatibus repudiandae sit ipsum.
-                        Voluptatem reiciendis odio dicta amet iste explicabo deleniti quos, quasi assumenda quod
-                        aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis est sequi
-                        natus impedit totam, quas quos quidem voluptas nesciunt eveniet laboriosam possimus tempore
-                        ullam inventore earum recusandae harum doloremque!Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Similique nisi assumenda totam dicta voluptatibus repudiandae sit ipsum.
-                        Voluptatem reiciendis odio dicta amet iste explicabo deleniti quos, quasi assumenda quod
-                        aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis est sequi
-                        natus impedit totam, quas quos quidem voluptas nesciunt eveniet laboriosam possimus tempore
-                        ullam inventore earum recusandae harum doloremque!Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Similique nisi assumenda totam dicta voluptatibus repudiandae sit ipsum.
-                        Voluptatem reiciendis odio dicta amet iste explicabo deleniti quos, quasi assumenda quod
-                        aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis est sequi
-                        natus impedit totam, quas quos quidem voluptas nesciunt eveniet laboriosam possimus tempore
-                        ullam inventore earum recusandae harum doloremque!Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Similique nisi assumenda totam dicta voluptatibus repudiandae sit ipsum.
-                        Voluptatem reiciendis odio dicta amet iste explicabo deleniti quos, quasi assumenda quod
-                        aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facilis est sequi
-                        natus impedit totam, quas quos quidem voluptas nesciunt eveniet laboriosam possimus tempore
-                        ullam inventore earum recusandae harum doloremque!dis odio dicta amet iste explicabo deleniti
-                        quos, quasi assumenda quod aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Officiis facilis est sequi natus impedit totam, quas quos quidem voluptas nesciunt eveniet
-                        laboriosam possimus tempore ullam inventore earum recusandae harum doloremque!</p>
 
 
 
