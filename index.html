@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard</title>
 
     <!-- LINK FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -45,59 +45,48 @@
     <div class="container-fluid d-md-block d-sm-none">
         <div class="row ">
             <!-- Sidebar -->
+            <!-- overflow-y-auto vh-100 se voglio far scrollare solo il contenuto oppure tolgo 'vh-100' appena aggiungo i contenuti -->
             <div class="sidebar justify-content-start vh-100 col-md-4 col-lg-3 collapse d-md-block bg-dark"
                 id="navbarSupportedContent">
-                <a href="/" class="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <svg class="bi pe-none me-2 " width="40" height="32">
+                <a href="/" class="d-flex my-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <!-- <svg class="bi pe-none me-2 " width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-4"> Bootstrap Dashboard</span>
+                    </svg> -->
+                    <span class="fs-4 ms-1"> Bootstrap Dashboard</span>
                 </a>
 
                 <hr class="border border-2 opacity-50">
 
-                <ul class="nav nav-pills flex-column mb-auto">
+                <ul class="nav nav-pills flex-column ">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link active" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16">
+                            <!-- <svg class="bi pe-none me-2" width="16" height="16">
                                 <use xlink:href="#home"></use>
-                            </svg>
+                            </svg> -->
                             <i class="fa-solid fa-house px-2"></i>
                             Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="sponsorizzazione.html" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
                             <i class="fa-solid fa-chart-line px-2"></i>
                             Sponsorizzazione
                         </a>
                     </li>
                     <li>
                         <a href="prodotti.html" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#table"></use>
-                            </svg>
                             <i class="fa-solid fa-box-archive px-2"></i>
                             Prodotti
                         </a>
                     </li>
                     <li>
                         <a href="nuovoprodotto.html" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#grid"></use>
-                            </svg>
                             <i class="fa-solid fa-plus px-2"></i>
                             Nuovo prodotto
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
                             <i class="fa-solid fa-user px-2"></i>
                             Clienti
                         </a>
