@@ -127,7 +127,7 @@
 
             <!-- MAIN -->
             <main class="d-block col-md-8 col-lg-9">
-                <div class="container-fluid pt-3 d-flex justify-content-between align-items-center w-100">
+                <div class="container-fluid px-0 pt-3 d-flex justify-content-between align-items-center w-100">
                     <div class="">
                         <h2 class="">10 prodotti trovati </h2>
                     </div>
@@ -161,15 +161,17 @@
                                     </div>
                                     <div>
                                         <h5>Smartpone Samsung Galaxy S21</h5>
-                                        <span class="text-secondary">Display AMOLED, Fotocamera Ultra Wide. Batteria a
+                                        <span class="text-secondary d-none d-xl-block">Display AMOLED, Fotocamera Ultra
+                                            Wide. Batteria a
                                             lunga durata</span>
                                     </div>
                                 </div>
                             </td>
-                            <td class="align-middle">
+                            <td class="align-middle d-none d-sm-table-cell">
                                 <span class="text-secondary">799.00€</span>
                             </td>
-                            <td class="align-middle">
+                            <td class="align-middle d-none d-md-table-cell">
+                                <!-- CHECK -->
                                 <span class="border border-success px-2 py-1 rounded-circle">
                                     <i class="fa-solid fa-check text-success"></i>
                                 </span>
@@ -188,45 +190,70 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- PRODUCT 2 -->
                         <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td colspan="2">
+                                <div class="d-flex">
+                                    <div class="align-middle">
+                                        <img class=" w-25 h-10 " src="https://picsum.photos/200" alt="">
+                                    </div>
+                                    <div class="align-middle">
+                                        <h5>Smartpone Samsung Galaxy S21</h5>
+                                        <span class="text-secondary d-none d-xl-block">Display AMOLED, Fotocamera Ultra
+                                            Wide. Batteria a
+                                            lunga durata</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle d-none d-sm-table-cell">
+                                <span class="text-secondary">799.00€</span>
+                            </td>
+                            <!-- CHECK -->
+                            <td class="align-middle d-none d-md-table-cell">
+                                <span class="border border-danger px-2 py-1 rounded-circle">
+                                    <i class="fa-solid fa-xmark text-danger"></i>
+                                </span>
+                            </td>
+                            </td>
+                            <td class="align-middle">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-outline-primary btn-sm me-2">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-danger btn-sm me-2"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </td>
                         </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+
                     </tbody>
                 </table>
 
 
-                 <!-- MODAL -->
-                 <div class="modal fade" id="exampleModal" tabindex="-1"
-                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                 <div class="modal-dialog">
-                     <div class="modal-content text-center">
-                         <div class="modal-header pt-3 border-0 d-flex justify-content-center ">
-                             <h1 class="modal-title fs-5  " id="exampleModalLabel">Elimina prodotto</h1>
-                         </div>
-                         <div class="modal-body">
-                             L'eliminazione sarà inneversibile, sei sicuro?
-                         </div>
-                         <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary"
-                                 data-bs-dismiss="modal">Si, continua</button>
-                             <button type="button" class="btn btn-primary">Annulla</button>
-                         </div>
-                     </div>
-                 </div>
-             </div>
 
-
-
-
-
+                <!-- MODAL -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-3 shadow">
+                            <div class="modal-body p-4 text-center">
+                                <h5 class="mb-0">Elimina prodotto</h5>
+                                <p class="mb-0">L'eliminazione sarà irreversibile, sei sicuro?</p>
+                            </div>
+                            <div class="modal-footer flex-nowrap p-0">
+                                <button type="button"
+                                    class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>Si,
+                                        continua</strong></button>
+                                <button type="button"
+                                    class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0"
+                                    data-bs-dismiss="modal">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </main>
             <!-- /MAIN -->
