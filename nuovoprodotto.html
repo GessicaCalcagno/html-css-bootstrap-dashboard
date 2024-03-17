@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboar</title>
 
     <!-- LINK FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -19,7 +19,7 @@
 <body>
     <!---------------------- HEADER ------------------>
     <header>
-        <nav class="navbar d-md-none navbar-expand-md d-sm-block bg-dark" data-bs-theme="dark">
+        <nav class="navbar fixed d-md-none navbar-expand-md d-sm-block bg-dark" data-bs-theme="dark">
             <!-- Container -->
             <div class="container">
                 <!-- brand -->
@@ -44,7 +44,8 @@
     <div class="container-fluid d-md-block d-sm-none">
         <div class="row ">
             <!-- Sidebar -->
-            <div class="sidebar justify-content-start vh-100 col-md-4 col-lg-3 collapse d-md-block bg-dark"
+
+            <div class="sidebar justify-content-start overflow-y-auto vh-100 col-md-4 col-lg-3 collapse d-md-block bg-dark"
                 id="navbarSupportedContent">
                 <a href="/" class="d-flex align-items-left mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                     <svg class="bi pe-none me-2 " width="40" height="32">
@@ -111,13 +112,12 @@
                         <strong>Mario Rossi</strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
                         <li>
                             <hr class="dropdown-divider" />
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#">Esci</a></li>
                     </ul>
                 </div>
             </div>
@@ -128,6 +128,14 @@
             <!-- MAIN -->
             <main class="col-md-8 col-lg-9">
                 Contenuto
+
+
+
+                <!-- ESEMPIO BOOTSTRAP -->
+
+
+
+
             </main>
             <!-- /MAIN -->
         </div>
