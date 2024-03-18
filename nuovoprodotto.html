@@ -40,27 +40,20 @@
     <!--------------------- /HEADER ------------------>
     <!-- ---------------------------------------------------------------------------------------------- -->
 
-     <!--------- SIDEBAR ------------>
-     <div class="container-fluid d-md-block">
+    <!--------- SIDEBAR ------------>
+    <div class="container-fluid d-md-block">
         <div class="row ">
             <!-- Sidebar -->
             <div class="sidebar justify-content-start overflow-y-auto vh-100 col-md-4 col-lg-3 collapse d-md-block bg-dark"
                 id="navbarSupportedContent">
                 <a href="/" class="d-flex my-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <!-- <svg class="bi pe-none me-2 " width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg> -->
                     <span class="fs-4 ms-1"> Bootstrap Dashboard</span>
                 </a>
-
                 <hr class="border border-2 opacity-50">
 
                 <ul class="nav nav-pills flex-column ">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link text-white" aria-current="page">
-                            <!-- <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#home"></use>
-                            </svg> -->
                             <i class="fa-solid fa-house px-2"></i>
                             Dashboard
                         </a>
@@ -116,32 +109,149 @@
 
             <!-- MAIN -->
             <main class="col-md-8 col-lg-9">
-                <div class="container-fluid overflow-y-scroll vh-100">
+                <div class="container-fluid overflow-y-auto vh-100">
                     <!-- TITLE -->
                     <div class="px-5 py-4 text-center">
                         <h2>Crea nuovo prodotto</h2>
                         <span class="lead">I campi contrassegnati con un (*) sono obbligatori.</span><br>
                         <span class="lead">Le immagini devono essere in formato PNG e non devono superare i 4 MB di
                             dimensione</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt saepe possimus reprehenderit nihil eligendi quos accusamus repellat ullam reiciendis. Necessitatibus fugit similique incidunt ut optio tenetur ea pariatur ex.</p>
                     </div>
                     <!-- FORM -->
-                    <div class="row vh-100">
-                        <div class="col-10 col-lg-8">
-                            <form >
-                                
-                                <label for="firstName" class="form-label w-100">Nome</label>
-                                <input type="text" class="form-control w-100" id="firstName" placeholder="Samsung Galaxy 10 Plus" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Valid first name is required.
+                    <div class="row">
+                        <!-- COLUMN LEFT -->
+                        <div class="col-12 col-lg-7">
+                            <form>
+                                <!-- 1° riga -->
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-4">
+                                        <label for="firstName" class="form-label w-100">Nome</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" class="form-control w-100" id="firstName"
+                                            placeholder="Samsung Galaxy 10 Plus" value="" required="">
+                                    </div>
+                                </div>
+                                <!-- 2° riga -->
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-4">
+                                        <label for="firstName" class="form-label w-100">Prezzo</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <input type="text" class="form-control w-100" id="firstName" placeholder="99.00"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <!-- 3° riga -->
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="disabledSelect" class="form-label w-100">Marca</label>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <select id="disabledSelect" class="form-select">
+                                            <option>--- Seleziona ---</option>
+                                            <option>Samsumg S24</option>
+                                            <option>Samsumg S21</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- description area -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label for="floatingTextarea2"></label>
+                                        <textarea class="form-control"
+                                            placeholder="Inserisci la descrizione del prodotto, massimo 10000 caratteri"
+                                            id="floatingTextarea2" style="height: 150px"></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Button group -->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="inputGroupFile02">
+                                            <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                                        </div>
+                                        <div class="col">
+                                            <div class="btn-toolbar mb-3" role="toolbar"
+                                                aria-label="Toolbar with button groups">
+                                                <div class="btn-group me-2" role="group" aria-label="First group">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary">Disponibile</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary">Esaurito</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Fuori
+                                                        Produzione</button>
+                                                    <button type="button" class="btn btn-outline-secondary">In
+                                                        arrivo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </form>
                         </div>
 
-                        <div class="col-10 col-lg-4">
-                            thftjfjtj
+                        <!-- COLUMN RIGHT -->
+                        <div class="col-12 col-lg-5">
+                            <div class="list-group mb-3">
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="">
+                                    <span>
+                                        Fotocamera principale
+                                        <small class="d-block text-body-secondary">With support text underneath to add
+                                            more detail</small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Schermo OLED
+                                        <small class="d-block text-body-secondary">Some other text goes here</small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Processore Octa-core
+                                        <small class="d-block text-body-secondary">And we end with another snippet of
+                                            text</small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Ricarica wirless
+                                        <small class="d-block text-body-secondary">And we end with another snippet of
+                                            text</small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Connessione 5G
+                                        <small class="d-block text-body-secondary">And we end with another snippet of
+                                            text</small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Tecnologia NFC
+                                        <small class="d-block text-body-secondary">And we end with another snippet of
+                                            text</small>
+                                    </span>
+                                </label>
+                            </div>
+
+                        </div>
+                        
+                        <!-- FINAL BUTTON -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary">Salva</button>
+                            </div>
                         </div>
 
                     </div>
